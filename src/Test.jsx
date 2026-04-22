@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function Apps() {
@@ -7,6 +7,10 @@ function Apps() {
   const increment = () => {
     setCount(count + 1);
   };
+
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  }, [count]);
 
   return (
     <div className='mx-auto max-w-md p-4 text-center'>
