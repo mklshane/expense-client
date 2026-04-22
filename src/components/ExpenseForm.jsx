@@ -1,5 +1,5 @@
 const EMPTY_FORM = { title: '', amount: '' };
-
+import { formatCurrency } from '../utils/utils';
 function ExpenseForm({
   form,
   isEditing,
