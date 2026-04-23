@@ -1,7 +1,5 @@
 import { Pencil, Trash2 } from 'lucide-react';
-
-const formatCurrency = (value) => new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP' }).format(Number(value) || 0);
-
+import { formatCurrency } from '../utils/utils';
 
 const ExpenseCard = ({ expense, onDelete, onEdit }) => {
   return (

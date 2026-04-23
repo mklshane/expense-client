@@ -1,4 +1,4 @@
-const SearchBar = ({ query, onChange }) => {
+function SearchBar({ query, onChange }) {
   return (
     <input
       type='text'
